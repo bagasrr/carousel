@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+html {
+  background: rgba(6, 16, 67, 0.9);
+}
+
+body {
+  overflow-x: hidden;
+}
+.judul {
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+}
+.container {
+  display: flex;
+  position: relative;
+  margin: 10% auto;
+  border: 1px solid white;
+  background: red;
+  justify-content: center;
+}
+.carousel {
+  display: flex;
+  position: relative;
+  background: skyblue;
+  width: 100%;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+.slide {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 50px 20px;
+  flex-shrink: 0;
+  scroll-snap-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 90px;
+  color: white;
+  transition: 0.3s;
+}
+.slide:hover {
+  scale: 1.2;
+}
+.arrow {
+  position: absolute;
+  cursor: pointer;
+  width: 20px;
+}
+.leftbutton {
+  left: 0;
+  top: 50%;
+  z-index: 1;
+  opacity: 60%;
+  transition: 0.3s;
+}
+.rightbutton {
+  right: 0;
+  top: 50%;
+  z-index: 1;
+  opacity: 60%;
+  transition: 0.3s;
+}
+.arrow:hover {
+  opacity: 100%;
+  width: 50px;
+  transform: scale(1, 1);
+}
+.slide1 {
+  background: green;
+}
+.slide2 {
+  background: blue;
+}
+.slide3 {
+  background: purple;
+}
+
+/* Batas */
+/* Batas */
+/* Batas */
+/* Batas */
+/* Batas */
+.carousel2 {
+  margin-bottom: 2000px;
+}
+.c2__container {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(10deg, rgba(212, 251, 0, 0.5) 0%, rgba(255, 0, 245, 0.5) 100%);
+  box-shadow: 5px 10px 30px rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+}
+
+.c2__slider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 80vw;
+  overflow-x: hidden;
+  /* border: 2px solid #333; */
+  height: 200px;
+  border-left: 2px solid white;
+}
+
+.c2__list {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* background: red; */
+}
+
+.c2__item {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border: 2px solid #333;
+  border-radius: 50px;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+}
